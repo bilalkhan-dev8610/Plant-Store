@@ -2,26 +2,22 @@ import plant from "../assets/plant.png"
 
 function Footer() {
   return (
-    <footer className="pt-24 pb-10">
+    <footer className="pt-20 pb-12">
 
-      <div
-        className="
-          max-w-[1200px]
-          mx-auto
-          px-10
-        "
-      >
+      <div className="max-w-[1200px] mx-auto px-6">
 
-        {/* Footer Box */}
+        {/* Footer Main Box */}
         <div
           className="
             rounded-[6px]
-           
-            px-10
+            bg-[#081708]
+            px-8
+            md:px-14
             py-12
           "
         >
 
+          {/* TOP AREA */}
           <div
             className="
               flex
@@ -60,7 +56,7 @@ function Footer() {
 
               </div>
 
-              {/* Text */}
+              {/* Description */}
               <p
                 className="
                   text-[#d2d2d2]
@@ -74,7 +70,7 @@ function Footer() {
                 living environment.”
               </p>
 
-              {/* Socials */}
+              {/* Social */}
               <div
                 className="
                   flex
@@ -112,7 +108,7 @@ function Footer() {
                 className="
                   flex
                   flex-col
-                  gap-1
+                  gap-3
                   text-[11px]
                   text-white
                 "
@@ -152,14 +148,23 @@ function Footer() {
                 For Every Update.
               </h3>
 
-              {/* Input */}
-              <div className="flex items-center">
+              {/* Newsletter */}
+              <div
+                className="
+                  flex
+                  flex-col
+                  sm:flex-row
+                  items-start
+                  sm:items-center
+                "
+              >
 
                 <input
                   type="email"
                   placeholder="Enter Email"
                   className="
-                    w-[230px]
+                    w-full
+                    sm:w-[230px]
                     h-[34px]
                     bg-transparent
                     border
@@ -179,20 +184,21 @@ function Footer() {
                     text-black
                     text-[10px]
                     font-semibold
+                    mt-3
+                    sm:mt-0
                   "
                 >
                   SUBSCRIBE
                 </button>
 
               </div>
-{/* Bottom */}
-          <div
-            className="
-              flex
-              justify-center
-              mt-14
-            "
-          >
+
+            </div>
+
+          </div>
+
+          {/* BOTTOM COPYRIGHT */}
+          <div className="flex justify-center mt-14">
 
             <p
               className="
@@ -204,11 +210,6 @@ function Footer() {
             </p>
 
           </div>
-            </div>
-
-          </div>
-
-          
 
         </div>
 

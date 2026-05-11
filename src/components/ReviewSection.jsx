@@ -37,13 +37,55 @@ function ReviewSection() {
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Heading */}
-        <div className="flex justify-center mb-16">
+       <div className="flex justify-center mb-16">
 
-          <h2 className="text-white text-4xl font-semibold text-center">
-            Customer Review
-          </h2>
+  <h2
+    className="
+      relative
+      text-white
+      text-[22px]
+      md:text-4xl
+      font-semibold
+      text-center
+      leading-none
+    "
+  >
 
-        </div>
+    Customer Review
+
+    {/* Left Yellow Corner */}
+    <span
+      className="
+        absolute
+        left-[-12px]
+        bottom-[2px]
+        w-[16px]
+        h-[16px]
+        border-l-[3px]
+        border-b-[3px]
+        border-[#c7b84e]
+        rounded-bl-[6px]
+      "
+    ></span>
+
+    {/* Right Yellow Corner */}
+    <span
+      className="
+        absolute
+        right-[-12px]
+        top-[2px]
+        w-[16px]
+        h-[16px]
+        border-r-[3px]
+        border-t-[3px]
+        border-[#c7b84e]
+        rounded-tr-[6px]
+      "
+    ></span>
+
+  </h2>
+
+</div>
 
         {/* Reviews Grid */}
         <div

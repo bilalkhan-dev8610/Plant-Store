@@ -70,13 +70,54 @@ function TopSellingSection() {
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Section Heading */}
-        <div className="flex justify-center mb-16">
+       <div className="flex justify-center mb-16">
 
-          <h2 className="text-white text-4xl font-semibold">
-            Our Top Selling Plants
-          </h2>
+  <h2
+    className="
+      relative
+      text-white
+      text-[22px]
+      md:text-4xl
+      font-semibold
+      leading-none
+    "
+  >
 
-        </div>
+    Our Top Selling Plants
+
+    {/* Left Yellow Corner */}
+    <span
+      className="
+        absolute
+        left-[-10px]
+        bottom-[-1px]
+        w-[16px]
+        h-[16px]
+        border-l-[3px]
+        border-b-[3px]
+        border-[#c7b84e]
+        rounded-bl-[6px]
+      "
+    ></span>
+
+    {/* Right Yellow Corner */}
+    <span
+      className="
+        absolute
+        right-[-10px]
+        top-[2px]
+        w-[16px]
+        h-[16px]
+        border-r-[3px]
+        border-t-[3px]
+        border-[#c7b84e]
+        rounded-tr-[6px]
+      "
+    ></span>
+
+  </h2>
+
+</div>
 
         {/* Plants Grid */}
         <div
@@ -84,7 +125,7 @@ function TopSellingSection() {
             grid
             grid-cols-1
             sm:grid-cols-2
-            lg:grid-cols-3
+           md:grid-cols-2 lg:grid-cols-3
             gap-8
             
           "

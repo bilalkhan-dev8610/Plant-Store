@@ -1,12 +1,9 @@
-import {
-  FaPlay,
-  FaChevronRight,
-  FaShoppingBag,
-} from "react-icons/fa"
-import RosePlant from "../assets/RosePlant.png"
-import bgImg from "../assets/bgImg.jpg"
-import Image1 from "../assets/Image1.png"
-import Image2 from "../assets/Image2.png"
+import { FaPlay, FaChevronRight, FaShoppingBag } from "react-icons/fa";
+import RosePlant from "../assets/RosePlant.png";
+import bgImg from "../assets/bgImg.jpg";
+import Image1 from "../assets/Image1.png";
+import Image2 from "../assets/Image2.png";
+import Img10 from "../assets/Img10.png";
 
 function HeroSection() {
   return (
@@ -18,10 +15,8 @@ function HeroSection() {
         pb-24
       "
     >
-
       {/* Background */}
       <div className="absolute  inset-0">
-
         <img
           src={bgImg}
           alt="background"
@@ -35,7 +30,6 @@ function HeroSection() {
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/45"></div>
-
       </div>
 
       {/* Main */}
@@ -49,21 +43,18 @@ function HeroSection() {
           pt-10
         "
       >
-
         {/* Navbar Space */}
         <div className="h-[20px]"></div>
 
         {/* HERO */}
-        <div className="relative min-h-[850px]">
-
+        <div className="relative min-h-[1150px] md:min-h-[850px]">
           {/* Left Content */}
-          <div className="max-w-[520px] pt-12">
-
+          <div className="max-w-full md:max-w-[520px] text-center md:text-left pt-12">
             <h1
               className="
                 text-white
-                text-[82px]
-                leading-[88px]
+              text-[52px] md:text-[82px]
+              leading-[58px] md:leading-[88px]
                 font-semibold
               "
             >
@@ -79,14 +70,12 @@ function HeroSection() {
                 max-w-[480px]
               "
             >
-              “Earth Exhale” symbolizes the purity and vitality
-              of the Earth's natural environment and its essential
-              role in sustaining life.
+              “Earth Exhale” symbolizes the purity and vitality of the Earth's
+              natural environment and its essential role in sustaining life.
             </p>
 
             {/* Buttons */}
-            <div className="flex items-center gap-5 mt-8">
-
+            <div className="flex items-center justify-center md:justify-start gap-5 mt-8">
               <button
                 className="
                   px-8
@@ -116,26 +105,24 @@ function HeroSection() {
                 <FaPlay className="ml-1 text-sm" />
               </button>
 
-              <span className="text-white">
-                Live Demo...
-              </span>
-
+              <span className="text-white">Live Demo...</span>
             </div>
-
           </div>
 
           {/* RIGHT CARD */}
           <div
             className="
-    absolute
-    right-[55px]
-
-    top-[10px]
+    relative
+    md:absolute
+    md:right-[55px]
+    md:top-[10px]
+    flex
+    justify-center
+    mt-10
+    md:mt-0
   "
           >
-
             <div className="relative">
-
               {/* Main Card */}
               <div
                 className="
@@ -152,7 +139,6 @@ function HeroSection() {
         pt-[120px]
       "
               >
-
                 {/* Plant Image */}
                 <img
                   src={RosePlant}
@@ -186,7 +172,6 @@ function HeroSection() {
           mt-2
         "
                 >
-
                   <h2
                     className="
             text-white
@@ -204,7 +189,6 @@ function HeroSection() {
             text-[11px]
           "
                   />
-
                 </div>
 
                 {/* Button */}
@@ -233,44 +217,41 @@ function HeroSection() {
           mt-6
         "
                 >
-
                   <div className="w-[5px] h-[5px] rounded-full bg-white"></div>
 
                   <div className="w-[5px] h-[5px] rounded-full bg-white/40"></div>
 
                   <div className="w-[5px] h-[5px] rounded-full bg-white/40"></div>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
 
           {/* REVIEW CARD */}
           <div
             className="
-              absolute
-              left-0
-              top-[430px]
+           relative
+md:absolute
+md:left-0
+md:top-[430px]
+mt-[420px]
+md:mt-0
+z-20
             "
           >
-
             <div
               className="
-                w-[300px]
+               w-full max-w-[300px]
                 rounded-[28px]
                 border
                 border-white/20
                 bg-white/5
                 backdrop-blur-xl
                 p-5
+                mb-10
               "
             >
-
               <div className="flex items-center gap-4">
-
                 <img
                   src={Image2}
                   alt="user"
@@ -281,17 +262,10 @@ function HeroSection() {
                 />
 
                 <div>
+                  <h3 className="text-white">Ronnie Hamill</h3>
 
-                  <h3 className="text-white">
-                    Ronnie Hamill
-                  </h3>
-
-                  <p className="text-yellow-400 text-sm">
-                    ★★★★★
-                  </p>
-
+                  <p className="text-yellow-400 text-sm">★★★★★</p>
                 </div>
-
               </div>
 
               <p
@@ -303,50 +277,83 @@ function HeroSection() {
                   
                 "
               >
-                I can't express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home.
+                I can't express how thrilled I am with my new natural plants!
+                They bring such a fresh and vibrant energy to my home.
               </p>
-
             </div>
-
           </div>
-
         </div>
 
         {/* TRENDY TITLE */}
-        <div className="flex justify-center mt-1 ">
+        <div className="flex justify-center mt-1">
 
-          <h2
-            className="
-              text-white
-              text-[54px]
-              font-semibold
-              mt-[-210px]
-            "
-          >
-            Our Trendy plants
-          </h2>
+  <h2
+    className="
+      relative
+      text-white
+      text-[22px]
+      md:text-[54px]
+      font-semibold
+      mt-[-300px]
+      leading-none
+    "
+  >
 
-        </div>
+    Our Trendy plants
+
+    {/* Left Yellow Corner */}
+    <span
+      className="
+        absolute
+        left-[-12px]
+        bottom-[230px]
+        w-[20px]
+        h-[20px]
+        border-l-[3px]
+        border-b-[3px]
+        border-[#c7b84e]
+        rounded-bl-[7px]
+      "
+    ></span>
+
+    {/* Right Yellow Corner */}
+    <span
+      className="
+        absolute
+        right-[-12px]
+        top-[6px]
+        w-[20px]
+        h-[20px]
+        border-r-[3px]
+        border-t-[3px]
+        border-[#c7b84e]
+        rounded-tr-[10px]
+      "
+    ></span>
+
+  </h2>
+
+</div>
 
         {/* TRENDY CARD 1 */}
         <div
           className="
     relative
-    h-[300px]
-    
+  min-h-[100px] md:h-[300px]
     rounded-[151px]
     border
     border-white/10
     bg-black/20
     backdrop-blur-[12px]
     overflow-hidden
-    flex
-    items-center
-    justify-between
+flex
+   flex-col
+  md:flex-row
+items-center
+justify-between
     px-16
   "
         >
-
           {/* Blur Glow */}
           <div
             className="
@@ -360,20 +367,18 @@ function HeroSection() {
           ></div>
 
           {/* LEFT IMAGE */}
-          
 
-            <img
-              src={Image1}
-              alt="plant"
-              className="
+          <img
+            src={Image1}
+            alt="plant"
+            className="
         w-[300px]
         overflow-hidden
+        left-[50px]
+top-[-95px]
         
-        mt-4  
       "
-            />
-
-          
+          />
 
           {/* RIGHT CONTENT */}
           <div
@@ -384,7 +389,6 @@ function HeroSection() {
       text-white
     "
           >
-
             <h2
               className="
         text-[26px]
@@ -403,9 +407,8 @@ function HeroSection() {
         mt-4
       "
             >
-              I recently added a beautiful desk decoration
-              plant to my workspace, and it has made such
-              a positive difference!
+              I recently added a beautiful desk decoration plant to my
+              workspace, and it has made such a positive difference!
             </p>
 
             <h3
@@ -420,7 +423,6 @@ function HeroSection() {
 
             {/* Buttons */}
             <div className="flex items-center gap-4 mt-5">
-
               <button
                 className="
           w-[120px]
@@ -453,19 +455,15 @@ function HeroSection() {
               >
                 <FaShoppingBag />
               </button>
-
             </div>
-
           </div>
-
         </div>
-
 
         {/* TRENDY CARD 2 */}
         <div
           className="
     relative
-    h-[300px]
+   min-h-[100px] md:h-[300px]
     rounded-[151px]
     border
     border-white/10
@@ -473,13 +471,14 @@ function HeroSection() {
     backdrop-blur-[12px]
     overflow-hidden
     flex
-    items-center
-    justify-between
+flex-col
+md:flex-row
+items-center
+justify-between
     px-16
     mt-14
   "
         >
-
           {/* Glow */}
           <div
             className="
@@ -501,7 +500,6 @@ function HeroSection() {
       text-white
     "
           >
-
             <h2
               className="
         text-[26px]
@@ -520,8 +518,8 @@ function HeroSection() {
         mt-4
       "
             >
-              The greenery adds a touch of nature and serenity
-              to my desk, making it feel more inviting and calm.
+              The greenery adds a touch of nature and serenity to my desk,
+              making it feel more inviting and calm.
             </p>
 
             <h3
@@ -535,7 +533,6 @@ function HeroSection() {
             </h3>
 
             <div className="flex items-center gap-4 mt-5">
-
               <button
                 className="
           w-[120px]
@@ -566,34 +563,26 @@ function HeroSection() {
               >
                 <FaShoppingBag />
               </button>
-
             </div>
-
           </div>
 
           {/* RIGHT IMAGE */}
           <div className="relative z-10">
-
             <img
-              src={Image1}
+              src={Img10}
               alt="plant"
               className="
         w-[260px]
         object-contain
         mt-4
+        h-[400px]
       "
             />
-
           </div>
-
         </div>
-
-
-
       </div>
-
     </section>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;

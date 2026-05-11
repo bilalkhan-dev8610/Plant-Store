@@ -12,51 +12,71 @@ function O2Section() {
       <div className="max-w-[1200px] mx-auto px-4">
 
         {/* SECTION TITLE */}
-        <div className="flex justify-center mb-16">
+       <div className="flex justify-center mb-16">
 
-          <h2
-            className="
-              relative
-              text-white
-              text-[22px]
-              font-medium
-            "
-          >
-            Our Best o2
+  <h2
+    className="
+      relative
+      text-white
+      text-[22px]
+      md:text-4xl
+      font-semibold
+      leading-none
+    "
+  >
 
-            {/* Golden Corner */}
-            <span
-              className="
-                absolute
-                left-[-8px]
-                bottom-[-4px]
-                w-[18px]
-                h-[10px]
-                border-l
-                border-b
-                border-[#d3c46b]
-                rounded-bl-[6px]
-              "
-            ></span>
+    Our Best o2
 
-          </h2>
+    {/* Left Yellow Corner */}
+    <span
+      className="
+        absolute
+        left-[-12px]
+        bottom-[2px]
+        w-[16px]
+        h-[16px]
+        border-l-[3px]
+        border-b-[3px]
+        border-[#c7b84e]
+        rounded-bl-[6px]
+      "
+    ></span>
 
-        </div>
+    {/* Right Yellow Corner */}
+    <span
+      className="
+        absolute
+        right-[-12px]
+        top-[2px]
+        w-[16px]
+        h-[16px]
+        border-r-[3px]
+        border-t-[3px]
+        border-[#c7b84e]
+        rounded-tr-[6px]
+      "
+    ></span>
+
+  </h2>
+
+</div>
 
         {/* MAIN CARD */}
         <div
           className="
             relative
-            h-[300px]
+         min-h-[50px] md:h-[300px]
             rounded-[92px]
             border
             border-white/10
             bg-black/20
             backdrop-blur-[12px]
             overflow-visible
-            flex
-            items-center
-            justify-between
+           flex
+flex-col
+md:flex-row
+items-center
+justify-between
             px-14
           "
         >
