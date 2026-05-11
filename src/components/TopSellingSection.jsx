@@ -1,0 +1,113 @@
+import PlantCard from "./PlantCard"
+import RosePlant from "../assets/RosePlant.png"
+import Image1 from "../assets/image1.png"
+import Img3 from "../assets/img3.png"
+import Img4 from "../assets/img4.png"
+import Img5 from "../assets/img5.png"
+import Img6 from "../assets/img6.png"
+
+function TopSellingSection() {
+
+  const plants = [
+    {
+      id: 1,
+      image: RosePlant,
+      title: "Aglaonema plant",
+      description:
+        "The Aglaonema plant, commonly known as Chinese Evergreen and known for its attractive foliage.",
+      price: 300,
+    },
+
+    {
+      id: 2,
+      image: Image1,
+      title: "Plantain Lilies",
+      description:
+        "Hostas are primarily grown for their lush decorative leaves and beautiful appearance.",
+      price: 380,
+    },
+
+    {
+      id: 3,
+      image: Img3,
+      title: "Cactus",
+      description:
+        "It is known for their ability to thrive in arid environments and dry weather.",
+      price: 259,
+    },
+
+    {
+      id: 4,
+      image: Img4,
+      title: "Swiss cheese Plant",
+      description:
+        "It is a popular tropical houseplant known for its dramatic perforated leaves.",
+      price: 400,
+    },
+
+    {
+      id: 5,
+      image: Img5,
+      title: "Sansevieria plant",
+      description:
+        "It is a popular indoor plant admired for its striking appearance and low maintenance nature.",
+      price: 450,
+    },
+
+    {
+      id: 6,
+      image: Img6,
+      title: "Agave plant",
+      description:
+        "The Agave plant is a genus of succulent plants known for their striking structure.",
+      price: 359,
+    },
+  ]
+
+  return (
+    <section className="py-20">
+
+      <div className="max-w-6xl mx-auto px-4">
+
+        {/* Section Heading */}
+        <div className="flex justify-center mb-16">
+
+          <h2 className="text-white text-4xl font-semibold">
+            Our Top Selling Plants
+          </h2>
+
+        </div>
+
+        {/* Plants Grid */}
+        <div
+          className="
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-3
+            gap-8
+            
+          "
+        >
+
+          {
+            plants.map((plant) => (
+              <PlantCard
+                key={plant.id}
+                image={plant.image}
+                title={plant.title}
+                description={plant.description}
+                price={plant.price}
+              />
+            ))
+          }
+
+        </div>
+
+      </div>
+
+    </section>
+  )
+}
+
+export default TopSellingSection
