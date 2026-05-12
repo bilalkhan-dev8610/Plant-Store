@@ -1,7 +1,7 @@
 import TestimonialCard from "./TestimonialCard"
-import Img7 from "../assets/img7.png"
-import Img8 from "../assets/img8.jpg"
-import Img9 from "../assets/img9.png"
+import Img7 from "../assets/Img7.png"
+import Img8 from "../assets/Img8.jpg"
+import Img9 from "../assets/Img9.png"
 
 function ReviewSection() {
 
@@ -37,7 +37,7 @@ function ReviewSection() {
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Heading */}
-        <div className="flex justify-center mb-16">
+        <div className="flex jusIify-center mb-16">
 
           <h2
             className="

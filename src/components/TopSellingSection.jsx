@@ -1,10 +1,10 @@
 import PlantCard from "./PlantCard"
 import RosePlant from "../assets/RosePlant.png"
-import Image1 from "../assets/image1.png"
-import Img3 from "../assets/img3.png"
-import Img4 from "../assets/img4.png"
-import Img5 from "../assets/img5.png"
-import Img6 from "../assets/img6.png"
+import Image1 from "../assets/Image1.png"
+import Img3 from "../assets/Img3.png"
+import Img4 from "../assets/Img4.png"
+import Img5 from "../assets/Img5.png"
+import Img6 from "../assets/Img6.png"
 
 function TopSellingSection() {
 
