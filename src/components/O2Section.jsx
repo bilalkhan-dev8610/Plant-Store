@@ -12,10 +12,10 @@ function O2Section() {
       <div className="max-w-[1200px] mx-auto px-4">
 
         {/* SECTION TITLE */}
-       <div className="flex justify-center mb-16">
+        <div className="flex justify-center mb-16">
 
-  <h2
-    className="
+          <h2
+            className="
       relative
       text-white
       text-[22px]
@@ -23,13 +23,13 @@ function O2Section() {
       font-semibold
       leading-none
     "
-  >
+          >
 
-    Our Best o2
+            Our Best o2
 
-    {/* Left Yellow Corner */}
-    <span
-      className="
+            {/* Left Yellow Corner */}
+            <span
+              className="
         absolute
         left-[-12px]
         bottom-[2px]
@@ -40,11 +40,11 @@ function O2Section() {
         border-[#c7b84e]
         rounded-bl-[6px]
       "
-    ></span>
+            ></span>
 
-    {/* Right Yellow Corner */}
-    <span
-      className="
+            {/* Right Yellow Corner */}
+            <span
+              className="
         absolute
         right-[-12px]
         top-[2px]
@@ -55,11 +55,11 @@ function O2Section() {
         border-[#c7b84e]
         rounded-tr-[6px]
       "
-    ></span>
+            ></span>
 
-  </h2>
+          </h2>
 
-</div>
+        </div>
 
         {/* MAIN CARD */}
         <div
@@ -96,10 +96,14 @@ justify-between
           {/* LEFT IMAGE */}
           <div
             className="
-              absolute
-              left-[10px]
-              top-[-85px]
-              z-20
+             absolute
+left-1/2
+-md:translate-x-0
+-translate-x-1/2
+md:left-[10px]
+top-[-20px]
+md:top-[-85px]
+z-20
              
             "
           >
@@ -108,9 +112,14 @@ justify-between
               src={RosePlant}
               alt="plant"
               className="
-                w-[340px]
-                object-contain
-              "
+            
+              w-[260px]
+            md:w-[340px]
+            object-contain
+            opacity-40
+            md:opacity-100
+            
+            "
             />
 
           </div>
@@ -177,6 +186,7 @@ justify-between
                   border-white/20
                   text-white
                   text-[12px]
+                  mb-5
                 "
               >
                 Explore
@@ -190,6 +200,7 @@ justify-between
                     text-white/60
                     text-[11px]
                     cursor-pointer
+                     mb-5
                   "
                 />
 
@@ -197,6 +208,7 @@ justify-between
                   className="
                     text-[11px]
                     text-white/70
+                    mb-5
                   "
                 >
                   01/04
@@ -207,6 +219,7 @@ justify-between
                     text-[#8f5bff]
                     text-[11px]
                     cursor-pointer
+                     mb-5
                   "
                 />
 
