@@ -1,19 +1,13 @@
-import {
-  FaChevronLeft,
-  FaChevronRight,
-} from "react-icons/fa"
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-import RosePlant from "../assets/RosePlant.png"
+import RosePlant from "../assets/RosePlant.png";
 
 function O2Section() {
   return (
     <section className="pt-24 pb-20">
-
       <div className="max-w-[1200px] mx-auto px-4">
-
         {/* SECTION TITLE */}
         <div className="flex justify-center mb-16">
-
           <h2
             className="
       relative
@@ -24,9 +18,7 @@ function O2Section() {
       leading-none
     "
           >
-
             Our Best o2
-
             {/* Left Yellow Corner */}
             <span
               className="
@@ -41,7 +33,6 @@ function O2Section() {
         rounded-bl-[6px]
       "
             ></span>
-
             {/* Right Yellow Corner */}
             <span
               className="
@@ -56,9 +47,7 @@ function O2Section() {
         rounded-tr-[6px]
       "
             ></span>
-
           </h2>
-
         </div>
 
         {/* MAIN CARD */}
@@ -77,10 +66,10 @@ flex-col
 md:flex-row
 items-center
 justify-between
+
             px-14
           "
         >
-
           {/* Glow */}
           <div
             className="
@@ -88,7 +77,7 @@ justify-between
               inset-0
               bg-gradient-to-r
              
-             
+           
              
             "
           ></div>
@@ -104,10 +93,11 @@ md:left-[10px]
 top-[-20px]
 md:top-[-85px]
 z-20
+
+ ml-28
              
             "
           >
-
             <img
               src={RosePlant}
               alt="plant"
@@ -121,7 +111,6 @@ z-20
             
             "
             />
-
           </div>
 
           {/* RIGHT CONTENT */}
@@ -132,10 +121,9 @@ z-20
               ml-auto
               max-w-[470px]
               text-white
-             
+            
             "
           >
-
             <h2
               className="
                 text-[18px]
@@ -154,9 +142,9 @@ z-20
                 mt-5
               "
             >
-              Oxygen-producing plants, often referred to as
-              “O2 plants,” are those that release oxygen into
-              the atmosphere through the process of photosynthesis.
+              Oxygen-producing plants, often referred to as “O2 plants,” are
+              those that release oxygen into the atmosphere through the process
+              of photosynthesis.
             </p>
 
             <p
@@ -167,15 +155,13 @@ z-20
                 mt-5
               "
             >
-              Many plants can help filter out pollutants and toxins
-              from the air, such as formaldehyde, benzene, and
-              trichloroethylene. This makes the air cleaner and
-              healthier to breathe.
+              Many plants can help filter out pollutants and toxins from the
+              air, such as formaldehyde, benzene, and trichloroethylene. This
+              makes the air cleaner and healthier to breathe.
             </p>
 
             {/* Bottom Row */}
             <div className="flex items-center justify-between mt-6">
-
               {/* Explore Button */}
               <button
                 className="
@@ -194,7 +180,6 @@ z-20
 
               {/* Slider Controls */}
               <div className="flex items-center gap-5">
-
                 <FaChevronLeft
                   className="
                     text-white/60
@@ -222,30 +207,22 @@ z-20
                      mb-5
                   "
                 />
-
               </div>
-
             </div>
-
           </div>
-
         </div>
 
         {/* DOTS */}
         <div className="flex justify-center gap-2 mt-10">
-
           <div className="w-[6px] h-[6px] rounded-full bg-white"></div>
 
           <div className="w-[6px] h-[6px] rounded-full bg-white/40"></div>
 
           <div className="w-[6px] h-[6px] rounded-full bg-white/40"></div>
-
         </div>
-
       </div>
-
     </section>
-  )
+  );
 }
 
-export default O2Section
+export default O2Section;
